@@ -23,9 +23,9 @@ resource "azurerm_dns_cname_record" "gitops-azure_dns" {
 
 resource "azurerm_dns_a_record" "vm_dns" {
   count               = "2"
-  name                = "${lookup(var.hostname, count.index)}"
+  name                = "${lookup(var.hostname, azure_vm_count.index)}"
   zone_name           = azurerm_dns_zone.azure_dns.name
   resource_group_name = azurerm_resource_group.dns_management.name
   ttl                 = 300
-  records             = ["${length(azurerm_public_ip.pip.*.id) > 0 ? element(concat(azurerm_public_ip.pip.*.ip_address, list("")), count.index) : ""}"]
+  records             = ["${length(azurerm_public_ip.pip.*.id) > 0 ? element(concat(azurerm_public_ip.pip.*.ip_address, list("")), azure_vm_count.index) : ""}"]
 }

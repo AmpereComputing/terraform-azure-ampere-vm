@@ -2,7 +2,7 @@ variable "ssh_key_file" {
   default = "/etc/ansible/keys/.ssh/id_rsa"
 }
 
-variable "count" {
+variable "azure_vm_count" {
   default = 2
 }
 
@@ -89,9 +89,9 @@ variable "admin_password" {
 }
 
 variable "tags" {
-  type = "map"
+  type = map
 
-  default {
+  default = {
     environment = "Public Cloud"
   }
 }
