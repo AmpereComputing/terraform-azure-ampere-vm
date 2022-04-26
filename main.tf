@@ -6,13 +6,13 @@ resource "tls_private_key" "azure" {
 
 resource "local_file" "azure-ssh-privkey" {
     content = tls_private_key.azure.private_key_pem
-    filename = "${path.module}/azure-id_rsa"
+    filename = "${path.cwd}/azure-id_rsa"
     file_permission = "0600"
 }
 
 resource "local_file" "azure-ssh-pubkey" {
     content  = tls_private_key.azure.public_key_openssh
-    filename = "${path.module}/azure-id_rsa.pub"
+    filename = "${path.cwd}/azure-id_rsa.pub"
     file_permission = "0644"
 }
 
