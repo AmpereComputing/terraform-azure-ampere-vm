@@ -13,8 +13,6 @@ Terraform code to launch a Ampere virtual machine on Microsoft Azure.
  * [Terraform](https://www.terraform.io/downloads.html)
  * [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
 
-
-
 ## What exactly is Terraform doing
 
 The goal of this code is to supply the minimal ammount of information to quickly have working Ampere virtual machine on ["Azure"](https://azure.microsoft.com/en-us/).
@@ -28,7 +26,6 @@ Addtional tasks performed by this code:
 * Launch Ampere virtual machine with metadata and ssh keys.
 * Output IP information to connect to the instance.
 
-
 To get started clone this repository from GitHub locally.
 
 ## Configuration with terraform.tfvars
@@ -37,7 +34,11 @@ The easiest way to configure is to use a terraform.tfvars in the project directo
 The following is an example of what terraform.tfvars should look like:
 
 ```
-TBD
+subscription_id = "12345678-abcd-1234-abcd-1234567890ab"
+client_id = "87654321-dcba-4321-dcba-ba0987654321"
+client_secret = "01234567-1234-1234-1234-1234567890ab"
+tenant_id = "01234567-1234-abcd-1234-abcdef123456"
+access_key: AbCdEfGhIjKlMnOpQrStUvWxYzaBcDeFGhIj/1234567890abcdefghijklmnopqrstuvwxyz1234567890abc==
 ```
 
 ### Running Terraform
