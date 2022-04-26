@@ -38,7 +38,7 @@ subscription_id = "12345678-abcd-1234-abcd-1234567890ab"
 client_id = "87654321-dcba-4321-dcba-ba0987654321"
 client_secret = "01234567-1234-1234-1234-1234567890ab"
 tenant_id = "01234567-1234-abcd-1234-abcdef123456"
-access_key: AbCdEfGhIjKlMnOpQrStUvWxYzaBcDeFGhIj/1234567890abcdefghijklmnopqrstuvwxyz1234567890abc==
+access_key = "AbCdEfGhIjKlMnOpQrStUvWxYzaBcDeFGhIj/1234567890abcdefghijklmnopqrstuvwxyz1234567890abc=="
 ```
 
 ### Running Terraform

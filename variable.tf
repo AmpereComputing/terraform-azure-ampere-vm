@@ -8,7 +8,7 @@ variable "azure_vm_count" {
 
 variable "resource_group" {
   description = "The name of the resource group in which to create the virtual network."
-  default     = "MSDN"
+  default     = "Ampere"
 }
 
 variable "rg_prefix" {
@@ -56,7 +56,7 @@ variable "subnet_prefix" {
 
 variable "vm_size" {
   description = "Specifies the size of the virtual machine."
-  default     = "Standard_B1ms"
+  default     = "Dpsv5"
 }
 
 variable "image_publisher" {
