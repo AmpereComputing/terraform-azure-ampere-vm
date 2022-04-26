@@ -100,4 +100,6 @@ variable tenant_id {}
 variable client_id {}
 variable client_secret {}
 variable access_key {}
-variable ssh_key_path {}
+variable ssh_key_path {
+  default = "/home/ubuntu/.ssh"
+}
