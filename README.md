@@ -18,7 +18,7 @@ Terraform code to launch a Ampere virtual machine on Microsoft Azure.
 ## What exactly is Terraform doing
 
 The goal of this code is to supply the minimal ammount of information to quickly have working Ampere virtual machine on ["Azure"](https://azure.microsoft.com/en-us/).
-This instance is configured with metadata to install required software, configure itself.
+This instance is configured with metadata to install required software and configure itself.
 
 Addtional tasks performed by this code:
 
