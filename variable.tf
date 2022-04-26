@@ -61,17 +61,17 @@ variable "vm_size" {
 
 variable "image_publisher" {
   description = "name of the publisher of the image (az vm image list)"
-  default     = "CoreOS"
+  default     = "Canonical"
 }
 
 variable "image_offer" {
   description = "the name of the offer (az vm image list)"
-  default     = "CoreOS"
+  default     = "UbuntuServer"
 }
 
 variable "image_sku" {
   description = "image sku to apply (az vm image list)"
-  default     = "alpha"
+  default     = "20.04-LTS"
 }
 
 variable "image_version" {
@@ -80,12 +80,12 @@ variable "image_version" {
 }
 variable "admin_username" {
   description = "administrator user name"
-  default     = "core"
+  default     = "ubuntu"
 }
 
 variable "admin_password" {
   description = "administrator password"
-  default     = "Fl@tC@rL!nux"
+  default     = "ubuntu"
 }
 
 variable "tags" {
@@ -100,3 +100,4 @@ variable tenant_id {}
 variable client_id {}
 variable client_secret {}
 variable access_key {}
+variable ssh_key_path {}
