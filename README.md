@@ -12,6 +12,7 @@ Terraform code to launch a Ampere virtual machine on Microsoft Azure.
 
  * [Terraform](https://www.terraform.io/downloads.html)
  * [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
+ * [Microsoft Azure CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
 ## What exactly is Terraform doing
 
