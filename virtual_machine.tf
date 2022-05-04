@@ -1,13 +1,13 @@
 # Define VMs
 resource "azurerm_virtual_machine" "vm" {
-  name                             = "vm${azure_vm_count.index}"
+  name                             = "vm${count.index}"
   location                         = var.location
   resource_group_name              = azurerm_resource_group.rg.name
   vm_size                          = var.vm_size
-  network_interface_ids            = ["${element(azurerm_network_interface.nic.*.id, azure_vm_count.index)}"]
+  network_interface_ids            = ["${element(azurerm_network_interface.nic.*.id, count.index)}"]
   delete_data_disks_on_termination = true
   delete_os_disk_on_termination    = true
-  count                            = var.count
+  count                            = var.azure_vm_count
   depends_on                       = [azurerm_network_interface.nic]
 
   storage_image_reference {
@@ -18,12 +18,12 @@ resource "azurerm_virtual_machine" "vm" {
   }
 
   storage_os_disk {
-    name          = "${lookup(var.osdisk, azure_vm_count.index)}"
+    name          = "${lookup(var.osdisk, count.index)}"
     create_option = "FromImage"
   }
 
   os_profile {
-    computer_name  = "${lookup(var.hostname, azure_vm_count.index)}"
+    computer_name  = "${lookup(var.hostname, count.index)}"
     admin_username = var.admin_username
     admin_password = var.admin_password
     custom_data    = "${base64encode(data.template_file.cloud_config.rendered)}"
@@ -33,7 +33,7 @@ resource "azurerm_virtual_machine" "vm" {
     disable_password_authentication = true
     ssh_keys {
        path     = var.ssh_key_path
-       key_data = tls_private_key.azure_vms.public_key_openssh
+       key_data = tls_private_key.azure.public_key_openssh
     }
   }
 

@@ -22,7 +22,7 @@ resource "azurerm_network_security_group" "nsg" {
     destination_address_prefix = "*"
   }
 
-  tags {
+  tags = {
     environment = "Public Cloud Nodes"
   }
 }

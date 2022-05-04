@@ -97,8 +97,8 @@ variable "tags" {
 }
 variable subscription_id {}
 variable tenant_id {}
-variable client_id {}
-variable client_secret {}
+#variable client_id {}
+#variable client_secret {}
 variable ssh_key_path {
   default = "/home/ubuntu/.ssh"
 }
