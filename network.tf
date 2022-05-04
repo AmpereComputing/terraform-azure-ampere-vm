@@ -17,7 +17,8 @@ resource "azurerm_virtual_network" "vnet" {
 
 # Azure Subnet Definition
 resource "azurerm_subnet" "subnet" {
-  name                 = "${var.rg_prefix}subnet{count.index}"
+  #name                 = "${var.rg_prefix}-subnet{count.index}"
+  name                 = "${var.rg_prefix}-subnet"
   virtual_network_name = azurerm_virtual_network.vnet.name
   resource_group_name  = azurerm_resource_group.rg.name
   address_prefixes     = [var.subnet_prefix]
@@ -37,7 +38,7 @@ resource "azurerm_network_interface" "nic" {
     subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "dynamic"
 #   public_ip_address_id          = "${length(azurerm_public_ip.pip.*.id) > 0 ? element(concat(azurerm_public_ip.pip.*.id, tolist("")), count.index) : ""}"
-#   public_ip_address_id          = element(azurerm_public_ip.pip.*.id, count.index)
+    public_ip_address_id          = element(azurerm_public_ip.pip.*.id, count.index)
   }
 
   tags = {
