@@ -36,7 +36,7 @@ resource "azurerm_network_interface" "nic" {
   ip_configuration {
     name                          = "ipconfig${var.rg_prefix}${count.index}"
     subnet_id                     = azurerm_subnet.subnet.id
-    private_ip_address_allocation = "dynamic"
+    private_ip_address_allocation = "Dynamic"
 #   public_ip_address_id          = "${length(azurerm_public_ip.pip.*.id) > 0 ? element(concat(azurerm_public_ip.pip.*.id, tolist("")), count.index) : ""}"
     public_ip_address_id          = element(azurerm_public_ip.pip.*.id, count.index)
   }

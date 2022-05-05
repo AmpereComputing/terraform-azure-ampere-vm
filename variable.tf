@@ -36,7 +36,7 @@ variable "osdisk" {
 
 variable "location" {
   description = "The location/region where the virtual network is created. Changing this forces a new resource to be created."
-  default     = "eastus"
+  default     = "westus2"
 }
 
 variable "virtual_network_name" {
@@ -56,7 +56,8 @@ variable "subnet_prefix" {
 
 variable "vm_size" {
   description = "Specifies the size of the virtual machine."
-  default     = "Dpsv5"
+  default     = "Standard_D16ps_v5"
+# default     = "Basic_A0"
 }
 
 variable "image_publisher" {
