@@ -46,3 +46,12 @@ resource "azurerm_network_interface" "nic" {
   }
 
 }
+data "azurerm_public_ip" "pip" {
+  name                = azurerm_public_ip.pip[count.index].name
+  resource_group_name = azurerm_virtual_machine.vm[count.index].resource_group_name
+  count               = var.azure_vm_count
+}
+
+output "AzureVMPublicIPAddresses" {
+  value = data.azurerm_public_ip.pip.*.ip_address
+}

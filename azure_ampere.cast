@@ -1,0 +1,13 @@
+{"version": 2, "width": 120, "height": 30, "timestamp": 1651871967, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.143341, "o", "\u001b]0;ansible@bristlecone: ~/src/terraform-azure-vm\u0007\u001b[01;32mansible@bristlecone\u001b[00m:\u001b[01;34m~/src/terraform-azure-vm\u001b[00m$ "]
+[3.167925, "o", "e"]
+[3.359742, "o", "x"]
+[3.857745, "o", "\b\u001b[K"]
+[4.099707, "o", "\b\u001b[K"]
+[4.279817, "o", "\u0007"]
+[4.469761, "o", "e"]
+[4.677808, "o", "x"]
+[4.789694, "o", "i"]
+[4.889687, "o", "t"]
+[5.219817, "o", "\r\n"]
+[5.220532, "o", "exit\r\n"]

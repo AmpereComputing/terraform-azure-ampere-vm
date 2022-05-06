@@ -23,7 +23,7 @@ resource "azurerm_virtual_machine" "vm" {
   }
 
   os_profile {
-    computer_name  = "${lookup(var.hostname, count.index)}"
+    computer_name  = format("${var.instance_prefix}-%02d", count.index+1)
     admin_username = var.admin_username
     admin_password = var.admin_password
     custom_data    = "${base64encode(data.template_file.cloud_config.rendered)}"

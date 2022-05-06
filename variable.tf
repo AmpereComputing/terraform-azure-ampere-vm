@@ -3,12 +3,17 @@ variable "ssh_key_file" {
 }
 
 variable "azure_vm_count" {
-  default = 1
+  default = 2
+}
+
+variable "instance_prefix" {
+  description = "Name prefix for vm instances"
+  default = "azure-ampere-vm-"
 }
 
 variable "resource_group" {
   description = "The name of the resource group in which to create the virtual network."
-  default     = "Ampere"
+  default     = "Terraform-Ampere-on-Azure"
 }
 
 variable "rg_prefix" {
@@ -16,14 +21,14 @@ variable "rg_prefix" {
   default     = "rg"
 }
 
-variable "hostname" {
-  description = "VM name referenced also in storage-related names."
-
-  default = {
-    "0" = "az01"
-    "1" = "az02"
-  }
-}
+#variable "hostname" {
+#  description = "VM name referenced also in storage-related names."
+#
+#  default = {
+#    "0" = "az01"
+#    "1" = "az02"
+#  }
+#}
 
 variable "osdisk" {
   description = "VM name referenced also in storage-related names."
@@ -98,8 +103,6 @@ variable "tags" {
 }
 variable subscription_id {}
 variable tenant_id {}
-#variable client_id {}
-#variable client_secret {}
 variable ssh_key_path {
   default = "/home/ubuntu/.ssh/authorized_keys"
 }
