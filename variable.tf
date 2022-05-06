@@ -3,7 +3,7 @@ variable "ssh_key_file" {
 }
 
 variable "azure_vm_count" {
-  default = 2
+  default = 1
 }
 
 variable "resource_group" {

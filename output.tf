@@ -1,5 +1,6 @@
 output "AzureVMPublicIPAddresses" {
-  value = "${azurerm_public_ip.pip.*.ip_address}"
+  value = [ "{azurerm_public_ip.pip.*.ip_address}"]
+# value = azurerm_public_ip.pip.*.id, count.index)
 }
 output "AzureVMSSHPublicKey" {
   value = tls_private_key.azure.public_key_openssh
