@@ -62,17 +62,17 @@ variable "vm_size" {
 
 variable "image_publisher" {
   description = "name of the publisher of the image (az vm image list)"
-  default     = "Canonical"
+  default     = "canonical"
 }
 
 variable "image_offer" {
   description = "the name of the offer (az vm image list)"
-  default     = "UbuntuServer"
+  default     = "0001-com-ubuntu-server-arm-preview-focal"
 }
 
 variable "image_sku" {
   description = "image sku to apply (az vm image list)"
-  default     = "20.04-LTS"
+  default     = "20_04-LTS"
 }
 
 variable "image_version" {
@@ -101,5 +101,5 @@ variable tenant_id {}
 #variable client_id {}
 #variable client_secret {}
 variable ssh_key_path {
-  default = "/home/ubuntu/.ssh"
+  default = "/home/ubuntu/.ssh/authorized_keys"
 }
