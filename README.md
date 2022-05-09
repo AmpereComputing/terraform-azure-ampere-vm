@@ -6,7 +6,7 @@
 
 ## Description
 
-Terraform code to launch a Ampere virtual machine on Microsoft Azure.
+Terraform code to launch a Ampere virtual machines on Microsoft Azure.
 
 ## Requirements
 
@@ -16,8 +16,8 @@ Terraform code to launch a Ampere virtual machine on Microsoft Azure.
 
 ## What exactly is Terraform doing
 
-The goal of this code is to supply the minimal ammount of information to quickly have working Ampere virtual machine on ["Azure"](https://azure.microsoft.com/en-us/).
-This instance is configured with cloud-config using the Azure metadata provider APIs.
+The goal of this code is to supply the minimal ammount of information to quickly have working Ampere virtual machines on ["Azure"](https://azure.microsoft.com/en-us/).
+Virtual machines are configured with a simple cloud-config using the Azure metadata provider APIs.
 
 Addtional tasks performed by this code:
 
@@ -36,9 +36,7 @@ The following is an example of what terraform.tfvars should look like:
 
 ```
 subscription_id = "12345678-abcd-1234-abcd-1234567890ab"
-client_id = "87654321-dcba-4321-dcba-ba0987654321"
-client_secret = "01234567-1234-1234-1234-1234567890ab"
-tenant_id = "01234567-1234-abcd-1234-abcdef123456"
+tenant_id = "87654321-dcba-4321-dcba-ba0987654321"
 ```
 
 ### Running Terraform
