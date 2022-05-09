@@ -8,7 +8,7 @@ variable "azure_vm_count" {
 
 variable "instance_prefix" {
   description = "Name prefix for vm instances"
-  default = "azure-ampere-vm-"
+  default = "azure-ampere-vm"
 }
 
 variable "resource_group" {
