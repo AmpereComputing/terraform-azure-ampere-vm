@@ -3,8 +3,7 @@
 Run the following command to record the video assets
 
 
-```
-asciinema rec assets/AmpereAzureVMs.cast --title='Ampere Azure VMs' --command='terraform init && terraform plan && terraform apply -auto-approve && terraform show' --overwrite
+docker run --rm -ti -v "$HOME/.config/asciinema":/root/.config/asciinema asciinema/asciinema rec assets/AmpereAzureVMs.cast --title='Ampere Azure VMs' --command='terraform init && terraform plan && terraform apply -auto-approve && sleep 10' --overwrite
 ```
 # To convert 
 docker pull asciinema/asciicast2gif
