@@ -17,7 +17,7 @@ locals {
       }
       ubuntu1804     = {
         image_publisher = "canonical"
-        image_offer     = "0001-com-ubuntu-server-arm-preview-bionic"
+        image_offer     = "0002-com-ubuntu-server-arm-preview-bionic"
         image_sku       = "18_04-LTS"
         image_version   = "latest"
         default_os_user = "ubuntu"
