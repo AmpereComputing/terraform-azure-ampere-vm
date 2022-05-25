@@ -51,7 +51,3 @@ data "azurerm_public_ip" "pip" {
   resource_group_name = azurerm_virtual_machine.vm[count.index].resource_group_name
   count               = var.azure_vm_count
 }
-
-output "AzureVMPublicIPAddresses" {
-  value = data.azurerm_public_ip.pip.*.ip_address
-}
