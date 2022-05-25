@@ -62,3 +62,8 @@ variable "tags" {
     environment = "Public Cloud"
   }
 }
+variable "cloud_init_template_file" {
+  default     = null
+  description = "Optional path for a cloud-init file"
+  type        = string
+}
