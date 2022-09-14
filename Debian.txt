@@ -1,0 +1,1450 @@
+[
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11:11-backports-arm64:0.20220622.1054",
+    "version": "0.20220622.1054"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11:11-backports-arm64:0.20220711.1073",
+    "version": "0.20220711.1073"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-arm64",
+    "publisher": "Debian",
+    "sku": "11-backports",
+    "urn": "Debian:debian-11-arm64:11-backports:0.20220622.1054",
+    "version": "0.20220622.1054"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-arm64",
+    "publisher": "Debian",
+    "sku": "11-backports",
+    "urn": "Debian:debian-11-arm64:11-backports:0.20220711.1073",
+    "version": "0.20220711.1073"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220622.1054",
+    "version": "0.20220622.1054"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220623.1055",
+    "version": "0.20220623.1055"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220624.1056",
+    "version": "0.20220624.1056"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220625.1057",
+    "version": "0.20220625.1057"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220626.1058",
+    "version": "0.20220626.1058"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220627.1059",
+    "version": "0.20220627.1059"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220629.1061",
+    "version": "0.20220629.1061"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220630.1062",
+    "version": "0.20220630.1062"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220701.1063",
+    "version": "0.20220701.1063"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220702.1064",
+    "version": "0.20220702.1064"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220703.1065",
+    "version": "0.20220703.1065"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220704.1066",
+    "version": "0.20220704.1066"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220705.1067",
+    "version": "0.20220705.1067"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220706.1068",
+    "version": "0.20220706.1068"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220707.1069",
+    "version": "0.20220707.1069"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220708.1070",
+    "version": "0.20220708.1070"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220709.1071",
+    "version": "0.20220709.1071"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220710.1072",
+    "version": "0.20220710.1072"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220711.1073",
+    "version": "0.20220711.1073"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220712.1074",
+    "version": "0.20220712.1074"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220713.1075",
+    "version": "0.20220713.1075"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220714.1076",
+    "version": "0.20220714.1076"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220715.1077",
+    "version": "0.20220715.1077"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220716.1078",
+    "version": "0.20220716.1078"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220717.1079",
+    "version": "0.20220717.1079"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220718.1080",
+    "version": "0.20220718.1080"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220719.1081",
+    "version": "0.20220719.1081"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220720.1082",
+    "version": "0.20220720.1082"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220721.1083",
+    "version": "0.20220721.1083"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220722.1084",
+    "version": "0.20220722.1084"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220723.1085",
+    "version": "0.20220723.1085"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220724.1086",
+    "version": "0.20220724.1086"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220725.1087",
+    "version": "0.20220725.1087"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220726.1088",
+    "version": "0.20220726.1088"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220727.1089",
+    "version": "0.20220727.1089"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220728.1090",
+    "version": "0.20220728.1090"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220729.1091",
+    "version": "0.20220729.1091"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220730.1092",
+    "version": "0.20220730.1092"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220731.1093",
+    "version": "0.20220731.1093"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220801.1094",
+    "version": "0.20220801.1094"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220802.1095",
+    "version": "0.20220802.1095"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220803.1096",
+    "version": "0.20220803.1096"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220804.1097",
+    "version": "0.20220804.1097"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220805.1098",
+    "version": "0.20220805.1098"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220806.1099",
+    "version": "0.20220806.1099"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220807.1100",
+    "version": "0.20220807.1100"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220808.1101",
+    "version": "0.20220808.1101"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220809.1102",
+    "version": "0.20220809.1102"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220810.1103",
+    "version": "0.20220810.1103"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220811.1104",
+    "version": "0.20220811.1104"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220812.1105",
+    "version": "0.20220812.1105"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220813.1106",
+    "version": "0.20220813.1106"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220814.1107",
+    "version": "0.20220814.1107"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220815.1108",
+    "version": "0.20220815.1108"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220816.1109",
+    "version": "0.20220816.1109"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220817.1110",
+    "version": "0.20220817.1110"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220818.1111",
+    "version": "0.20220818.1111"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220819.1112",
+    "version": "0.20220819.1112"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220820.1113",
+    "version": "0.20220820.1113"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220821.1114",
+    "version": "0.20220821.1114"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220822.1115",
+    "version": "0.20220822.1115"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220823.1116",
+    "version": "0.20220823.1116"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220825.1118",
+    "version": "0.20220825.1118"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220826.1119",
+    "version": "0.20220826.1119"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220827.1120",
+    "version": "0.20220827.1120"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220828.1121",
+    "version": "0.20220828.1121"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220829.1122",
+    "version": "0.20220829.1122"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220830.1123",
+    "version": "0.20220830.1123"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220831.1124",
+    "version": "0.20220831.1124"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220901.1125",
+    "version": "0.20220901.1125"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220902.1126",
+    "version": "0.20220902.1126"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220903.1127",
+    "version": "0.20220903.1127"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220904.1128",
+    "version": "0.20220904.1128"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220905.1129",
+    "version": "0.20220905.1129"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220906.1130",
+    "version": "0.20220906.1130"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220907.1131",
+    "version": "0.20220907.1131"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220908.1132",
+    "version": "0.20220908.1132"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220909.1133",
+    "version": "0.20220909.1133"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220910.1134",
+    "version": "0.20220910.1134"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220911.1135",
+    "version": "0.20220911.1135"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220912.1136",
+    "version": "0.20220912.1136"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220913.1137",
+    "version": "0.20220913.1137"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-11-daily",
+    "publisher": "Debian",
+    "sku": "11-backports-arm64",
+    "urn": "Debian:debian-11-daily:11-backports-arm64:0.20220914.1138",
+    "version": "0.20220914.1138"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220605.1037",
+    "version": "0.20220605.1037"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220606.1038",
+    "version": "0.20220606.1038"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220607.1039",
+    "version": "0.20220607.1039"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220608.1040",
+    "version": "0.20220608.1040"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220609.1041",
+    "version": "0.20220609.1041"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220610.1042",
+    "version": "0.20220610.1042"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220611.1043",
+    "version": "0.20220611.1043"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220612.1044",
+    "version": "0.20220612.1044"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220613.1045",
+    "version": "0.20220613.1045"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220614.1046",
+    "version": "0.20220614.1046"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220615.1047",
+    "version": "0.20220615.1047"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220616.1048",
+    "version": "0.20220616.1048"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220617.1049",
+    "version": "0.20220617.1049"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220618.1050",
+    "version": "0.20220618.1050"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220619.1051",
+    "version": "0.20220619.1051"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220620.1052",
+    "version": "0.20220620.1052"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220621.1053",
+    "version": "0.20220621.1053"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220622.1054",
+    "version": "0.20220622.1054"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220623.1055",
+    "version": "0.20220623.1055"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220624.1056",
+    "version": "0.20220624.1056"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220625.1057",
+    "version": "0.20220625.1057"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220626.1058",
+    "version": "0.20220626.1058"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220627.1059",
+    "version": "0.20220627.1059"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220628.1060",
+    "version": "0.20220628.1060"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220701.1063",
+    "version": "0.20220701.1063"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220702.1064",
+    "version": "0.20220702.1064"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220703.1065",
+    "version": "0.20220703.1065"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220704.1066",
+    "version": "0.20220704.1066"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220705.1067",
+    "version": "0.20220705.1067"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220706.1068",
+    "version": "0.20220706.1068"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220708.1070",
+    "version": "0.20220708.1070"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220709.1071",
+    "version": "0.20220709.1071"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220710.1072",
+    "version": "0.20220710.1072"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220711.1073",
+    "version": "0.20220711.1073"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220712.1074",
+    "version": "0.20220712.1074"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220713.1075",
+    "version": "0.20220713.1075"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220714.1076",
+    "version": "0.20220714.1076"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220715.1077",
+    "version": "0.20220715.1077"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220716.1078",
+    "version": "0.20220716.1078"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220717.1079",
+    "version": "0.20220717.1079"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220718.1080",
+    "version": "0.20220718.1080"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220719.1081",
+    "version": "0.20220719.1081"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220720.1082",
+    "version": "0.20220720.1082"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220721.1083",
+    "version": "0.20220721.1083"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220722.1084",
+    "version": "0.20220722.1084"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220723.1085",
+    "version": "0.20220723.1085"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220725.1087",
+    "version": "0.20220725.1087"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220726.1088",
+    "version": "0.20220726.1088"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220727.1089",
+    "version": "0.20220727.1089"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220728.1090",
+    "version": "0.20220728.1090"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220729.1091",
+    "version": "0.20220729.1091"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220730.1092",
+    "version": "0.20220730.1092"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220731.1093",
+    "version": "0.20220731.1093"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220801.1094",
+    "version": "0.20220801.1094"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220802.1095",
+    "version": "0.20220802.1095"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220803.1096",
+    "version": "0.20220803.1096"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220804.1097",
+    "version": "0.20220804.1097"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220805.1098",
+    "version": "0.20220805.1098"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220806.1099",
+    "version": "0.20220806.1099"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220807.1100",
+    "version": "0.20220807.1100"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220808.1101",
+    "version": "0.20220808.1101"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220809.1102",
+    "version": "0.20220809.1102"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220810.1103",
+    "version": "0.20220810.1103"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220811.1104",
+    "version": "0.20220811.1104"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220812.1105",
+    "version": "0.20220812.1105"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220813.1106",
+    "version": "0.20220813.1106"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220814.1107",
+    "version": "0.20220814.1107"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220815.1108",
+    "version": "0.20220815.1108"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220816.1109",
+    "version": "0.20220816.1109"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220817.1110",
+    "version": "0.20220817.1110"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220818.1111",
+    "version": "0.20220818.1111"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220819.1112",
+    "version": "0.20220819.1112"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220820.1113",
+    "version": "0.20220820.1113"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220821.1114",
+    "version": "0.20220821.1114"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220822.1115",
+    "version": "0.20220822.1115"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220826.1119",
+    "version": "0.20220826.1119"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220827.1120",
+    "version": "0.20220827.1120"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220829.1122",
+    "version": "0.20220829.1122"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220830.1123",
+    "version": "0.20220830.1123"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220831.1124",
+    "version": "0.20220831.1124"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220901.1125",
+    "version": "0.20220901.1125"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220902.1126",
+    "version": "0.20220902.1126"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220903.1127",
+    "version": "0.20220903.1127"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220904.1128",
+    "version": "0.20220904.1128"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220905.1129",
+    "version": "0.20220905.1129"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220906.1130",
+    "version": "0.20220906.1130"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220907.1131",
+    "version": "0.20220907.1131"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220908.1132",
+    "version": "0.20220908.1132"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220909.1133",
+    "version": "0.20220909.1133"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220910.1134",
+    "version": "0.20220910.1134"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220911.1135",
+    "version": "0.20220911.1135"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220912.1136",
+    "version": "0.20220912.1136"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220913.1137",
+    "version": "0.20220913.1137"
+  },
+  {
+    "architecture": "Arm64",
+    "offer": "debian-sid-daily",
+    "publisher": "Debian",
+    "sku": "sid-arm64",
+    "urn": "Debian:debian-sid-daily:sid-arm64:0.20220914.1138",
+    "version": "0.20220914.1138"
+  }
+]

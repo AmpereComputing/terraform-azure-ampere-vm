@@ -8,6 +8,13 @@ locals {
     #   image_version   = "latest"
     #   default_os_user = "almalinux"
     # }
+      debian11     = {
+        image_publisher = "Debian"
+        image_offer     = "debian-11-arm64"
+        image_sku       = "11-backports"
+        image_version   = "latest"
+        default_os_user = "debian"
+      }
       ubuntu2004     = {
         image_publisher = "canonical"
         image_offer     = "0001-com-ubuntu-server-arm-preview-focal"
