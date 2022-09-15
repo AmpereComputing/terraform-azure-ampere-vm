@@ -53,7 +53,8 @@ The following is an example of what terraform.tfvars should look like:
 
 ```
 subscription_id = "12345678-abcd-1234-abcd-1234567890ab"
-tenant_id = "87654321-dcba-4321-dcba-ba0987654321"```
+tenant_id = "87654321-dcba-4321-dcba-ba0987654321"
+```
 
 For more information regarding how to get your Azure credentials working with terraform please refer to the following reading material:
 
