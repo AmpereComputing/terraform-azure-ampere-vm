@@ -5,7 +5,7 @@
 ## Table of Contents
 * [Introduction](#introduction)
 * [Requirements](#requirements)
-* [Using the oci-ampere-a1 terraform module](#using-the-oci-ampere-a1-terraform-module)
+* [Using the azure-ampere-vm terraform module](#using-the-azure-ampere-vm-terraform-module)
   * [Configuration with terraform.tfvars](#configuration-with-terraformtfvars)
   * [Creating the main.tf](#creating-the-maintf)
   * [Creating a cloud-init template](#creating-a-cloud-init-template)
@@ -38,9 +38,9 @@ Obviously to begin you will need a couple things.  Personally I'm a big fan of t
  * [Terraform](https://www.terraform.io/downloads.html) will need be installed on your system. 
  * [Oracle Azure "Always Free" Account](https://www.oracle.com/cloud/free/#always-free) and credentials for API use
 
-## Using the oci-ampere-a1 terraform module
+## Using the azure-ampere-vm terraform module
 
-The [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) terraform module code supplies the minimal ammount of information to quickly have working Ampere A1 instances on Azure ["Always Free"](https://www.oracle.com/cloud/free/#always-free).  It has been updated to include the ability to easily select [Debian](https://debian.org) as an option.  To keep things simple from an Azure perspective, the root compartment will be used (compartment id and tenancy id are the same) when launching any instances.  Addtional tasks performed by the [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) terraform module.
+The [azure-ampere-vm](https://github.com/amperecomputing/terraform-azure-ampere-vm) terraform module code supplies the minimal ammount of information to quickly have working Ampere A1 instances on Azure ["Always Free"](https://www.oracle.com/cloud/free/#always-free).  It has been updated to include the ability to easily select [Debian](https://debian.org) as an option.  To keep things simple from an Azure perspective, the root compartment will be used (compartment id and tenancy id are the same) when launching any instances.  Addtional tasks performed by the [azure-ampere-vm](https://github.com/amperecomputing/terraform-azure-ampere-vm) terraform module.
 
 * Operating system image id discovery in the user region.
 * Dynamically creating sshkeys to use when logging into the instance.
@@ -86,8 +86,8 @@ locals {
   cloud_init_template_path = "${path.cwd}/cloud-init.yaml.tpl"
 }
 
-module "oci-ampere-a1" {
-  source                   = "github.com/amperecomputing/terraform-oci-ampere-a1"
+module "azure-ampere-vm" {
+  source                   = "github.com/amperecomputing/terraform-azure-ampere-vm"
   tenancy_ocid             = var.tenancy_ocid
   user_ocid                = var.user_ocid
   fingerprint              = var.fingerprint
@@ -104,10 +104,10 @@ module "oci-ampere-a1" {
 }
 
 output "oci_ampere_a1_private_ips" {
-  value     = module.oci-ampere-a1.ampere_a1_private_ips
+  value     = module.azure-ampere-vm.ampere_a1_private_ips
 }
 output "oci_ampere_a1_public_ips" {
-  value     = module.oci-ampere-a1.ampere_a1_public_ips
+  value     = module.azure-ampere-vm.ampere_a1_public_ips
 }
 ```
 
