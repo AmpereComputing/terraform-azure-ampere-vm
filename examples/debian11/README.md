@@ -171,7 +171,7 @@ Next you'll need to login with the dynamically generated sshkey that will be sit
 To log in take the ip address from the output above and run the following ssh command:
 
 ```
-ssh -i ./oci-is_rsa debian@155.248.228.151
+ssh -i ./azure-id_rsa debian@155.248.228.151
 ```
 
 You should be automatically logged in after running the the command.  The following is output from sshing into an instance and then running  'sudo cat /var/log/messages' to verify cloud-init execution and package installation:
