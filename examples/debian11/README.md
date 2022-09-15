@@ -1,6 +1,6 @@
 ![Ampere Computing](https://avatars2.githubusercontent.com/u/34519842?s=400&u=1d29afaac44f477cbb0226139ec83f73faefe154&v=4)
 
-# Getting Cloud-Native with Debian in OCI using Ampere A1 and Terraform
+# Getting Cloud-Native with Debian in Azure using Ampere A1 and Terraform
 
 ## Table of Contents
 * [Introduction](#introduction)
@@ -27,20 +27,20 @@ For those unfamiliar with [Debian](https://debian.org), it has similarities with
 
 When choosing a cloud-native OS you might not think of [Debian](https://debian.org), however it supports the same industry standard metadata interfaces for instance configurations as Linux, [Cloud-Init](https://cloud-init.io). This allows you to automate your [Debian](https://debian.org) workloads, in a simlar fashion to other operating system options.  This meams [Debian](https://debian.org) is perfectly suitable when using on a cloud platform.
 
-Now personally speaking I have been working with the great team at the [Debian](https://debian.org) project for some time watching thier craftmanship, curating, iterating, and helping achive the "it just works" experience for Aarch64 and Ampere platforms and customers who choose to build and run solutions on [Debian](https://debian.org). Recently [Debian](https://debian.org) became available for use on Ampere A1 shapes within the [Oracle OCI](https://www.oracle.com/cloud/free/#always-free) marketplace.
+Now personally speaking I have been working with the great team at the [Debian](https://debian.org) project for some time watching thier craftmanship, curating, iterating, and helping achive the "it just works" experience for Aarch64 and Ampere platforms and customers who choose to build and run solutions on [Debian](https://debian.org). Recently [Debian](https://debian.org) became available for use on Ampere A1 shapes within the [Oracle Azure](https://www.oracle.com/cloud/free/#always-free) marketplace.
 
 In this post, we will build upon prevous work to quickly automate using [Debian](https://debian.org) on Ampere(R) Altra(TM) Arm64 processors within Oracle Cloud Infrastructure using Ampere A1 shapes.
 
 ## Requirements
 
-Obviously to begin you will need a couple things.  Personally I'm a big fan of the the DevOPs tools that support lots of api, and different use cases. [Terraform](https://www.terraform.io/downloads.html) is one of those types of tools.  If you have seen my [prevous session with some members of the Oracle Cloud Infrastracture team](https://youtu.be/3F5EnHRPCI4), I build a terraform module to quickly get you started using Ampere plaforms on OCI.  Today we are going to use that module to launch a [Debian](Instance) virtual machine while passing in some metadata to configure it.
+Obviously to begin you will need a couple things.  Personally I'm a big fan of the the DevOPs tools that support lots of api, and different use cases. [Terraform](https://www.terraform.io/downloads.html) is one of those types of tools.  If you have seen my [prevous session with some members of the Oracle Cloud Infrastracture team](https://youtu.be/3F5EnHRPCI4), I build a terraform module to quickly get you started using Ampere plaforms on Azure.  Today we are going to use that module to launch a [Debian](Instance) virtual machine while passing in some metadata to configure it.
 
  * [Terraform](https://www.terraform.io/downloads.html) will need be installed on your system. 
- * [Oracle OCI "Always Free" Account](https://www.oracle.com/cloud/free/#always-free) and credentials for API use
+ * [Oracle Azure "Always Free" Account](https://www.oracle.com/cloud/free/#always-free) and credentials for API use
 
 ## Using the oci-ampere-a1 terraform module
 
-The [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) terraform module code supplies the minimal ammount of information to quickly have working Ampere A1 instances on OCI ["Always Free"](https://www.oracle.com/cloud/free/#always-free).  It has been updated to include the ability to easily select [Debian](https://debian.org) as an option.  To keep things simple from an OCI perspective, the root compartment will be used (compartment id and tenancy id are the same) when launching any instances.  Addtional tasks performed by the [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) terraform module.
+The [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) terraform module code supplies the minimal ammount of information to quickly have working Ampere A1 instances on Azure ["Always Free"](https://www.oracle.com/cloud/free/#always-free).  It has been updated to include the ability to easily select [Debian](https://debian.org) as an option.  To keep things simple from an Azure perspective, the root compartment will be used (compartment id and tenancy id are the same) when launching any instances.  Addtional tasks performed by the [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) terraform module.
 
 * Operating system image id discovery in the user region.
 * Dynamically creating sshkeys to use when logging into the instance.
@@ -53,7 +53,7 @@ The [oci-ampere-a1](https://github.com/amperecomputing/terraform-oci-ampere-a1) 
 ### Configuration with terraform.tfvars
 
 For the purpose of this we will quickly configure Terraform using a terraform.tfvars in the project directory.  
-Please note that Compartment OCID are the same as Tenancy OCID for Root Compartment.
+Please note that Compartment AzureD are the same as Tenancy AzureD for Root Compartment.
 The following is an example of what terraform.tfvars should look like:
 
 ```
@@ -63,10 +63,10 @@ fingerprint = "a1:01:b2:02:c3:03:e4:04:10:11:12:13:14:15:16:17"
 private_key_path = "/home/bwayne/.oci/oracleidentitycloudservice_bwayne-08-09-14-59.pem"
 ```
 
-For more information regarding how to get your OCI credentials please refer to the following reading material:
+For more information regarding how to get your Azure credentials please refer to the following reading material:
 
 * [https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm)
-* [Where to Get the Tenancy's OCID and User's OCID](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#five)
+* [Where to Get the Tenancy's AzureD and User's AzureD](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#five)
 * [API Key Authentication](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm#APIKeyAuth)
 * [Instance Principal Authorization](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm#instancePrincipalAuth)
 * [Security Token Authentication](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm#securityTokenAuth)
@@ -138,7 +138,7 @@ system_info:
   default_user:
     groups: [ampere]
 runcmd:
-  - echo 'OCI Ampere Debian Example' >> /etc/motd
+  - echo 'Azure Ampere Debian Example' >> /etc/motd
 ```
 
 ### Running Terraform
