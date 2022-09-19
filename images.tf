@@ -15,17 +15,38 @@ locals {
         image_version   = "latest"
         default_os_user = "debian"
       }
+      mariner     = {
+        image_publisher = "MicrosoftCBLMariner"
+        image_offer     = "cbl-mariner"
+        image_sku       = "cbl-mariner-2-arm64"
+        image_version   = "latest"
+        default_os_user = "mariner"
+      }
+      opensuse     = {
+        image_publisher = "SUSE"
+        image_offer     = "opensuse-leap-15-4-arm64"
+        image_sku       = "GEN2"
+        image_version   = "latest"
+        default_os_user = "opensuse"
+      }
+      ubuntu2204     = {
+        image_publisher = "canonical"
+        image_offer     = "0001-com-ubuntu-server-jammy"
+        image_sku       = "22_04-lts-arm64"
+        image_version   = "latest"
+        default_os_user = "ubuntu"
+      }
       ubuntu2004     = {
         image_publisher = "canonical"
-        image_offer     = "0001-com-ubuntu-server-arm-preview-focal"
-        image_sku       = "20_04-LTS"
+        image_offer     = "0001-com-ubuntu-server-focal"
+        image_sku       = "20_04-lts-arm64"
         image_version   = "latest"
         default_os_user = "ubuntu"
       }
       ubuntu1804     = {
         image_publisher = "canonical"
-        image_offer     = "0002-com-ubuntu-server-arm-preview-bionic"
-        image_sku       = "18_04-LTS"
+        image_offer     = "UbuntuServer"
+        image_sku       = "18_04-daily-lts-arm64"
         image_version   = "latest"
         default_os_user = "ubuntu"
       }
