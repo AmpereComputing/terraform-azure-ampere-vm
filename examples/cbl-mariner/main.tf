@@ -18,8 +18,8 @@ module "azure-ampere-vm" {
      #  vm_size                  = var.vm_size
         location                 = "westus2"
         azure_vm_count           = 1
-        azure_os_image           = "opensuse"
-        instance_prefix          = "azure-ampere-vm-opensuse-15"
+        azure_os_image           = "mariner"
+        instance_prefix          = "azure-ampere-vm-mariner"
         cloud_init_template_file = local.cloud_init_template_path
 }
 

@@ -8,6 +8,7 @@ packages:
   - rsync
   - git
   - curl
+  - docker
   - python3-pip
   - python3-dev
   - python3-selinux
@@ -24,4 +25,7 @@ system_info:
     groups: [docker]
 
 runcmd:
+  - systemctl enable docker
+  - systemctl start docker
+  - docker run -d --name registry --restart=always -p 4000:5000  -v registry:/var/lib/registry registry:2
   - echo 'Azure Ampere VM Ubuntu 20.04 Example' >> /etc/motd

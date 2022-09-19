@@ -20,7 +20,7 @@ locals {
         image_offer     = "cbl-mariner"
         image_sku       = "cbl-mariner-2-arm64"
         image_version   = "latest"
-        default_os_user = "mariner"
+        default_os_user = "root"
       }
       opensuse     = {
         image_publisher = "SUSE"
