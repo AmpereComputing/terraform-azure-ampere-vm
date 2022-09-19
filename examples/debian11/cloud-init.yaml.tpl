@@ -77,8 +77,6 @@ packages:
   - rsync
   - git
   - curl
-  - docker-ce
-  - docker-ce-cli
   - python3-pip
   - python3-dev
   - python3-selinux
@@ -100,6 +98,8 @@ system_info:
     groups: [docker]
 
 runcmd:
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - sudo apt-get update -y && apt-get install -y docker-ce docker-ce-cli
   - docker run -d --name registry --restart=always -p 4000:5000  -v registry:/var/lib/registry registry:2
   - pip3 install -U pip
   - pip3 install -U wheel
