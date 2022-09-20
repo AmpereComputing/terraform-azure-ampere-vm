@@ -159,7 +159,7 @@ terraform init
 
 Below is output from a 'terraform init' execution within the project directory.
 
-<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
+<script id="asciicast-522771" src="https://asciinema.org/a/522771.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
 
 After 'terraform init' is executed it is necessary to run 'plan' to see the tasks, steps and objects. that will be created by interacting with
 the cloud APIs. Executing the following from a command line will do so:
@@ -170,7 +170,7 @@ terraform plan
 
 The ouput from a 'terraform plan' execution in the project directory will look similar to the following:
 
-<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
+<script id="asciicast-522772" src="https://asciinema.org/a/522772.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
 
 Finally you will execute the 'apply' phase of the terraform execuction sequence. This will create all the objects, execute all the tasks and
 display any output that is defined. Executing the following command from the project directory will automatically execute without requiring any
@@ -182,7 +182,7 @@ terraform apply -auto-approve
 
 The following is an example of output from a 'apply' run of terraform from within the project directory:
 
-<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
+<script id="asciicast-522773" src="https://asciinema.org/a/522773.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
 
 ### Logging in
 
@@ -196,7 +196,7 @@ ssh -i ./azure-id_rsa opensuse@20.69.123.141
 You should be automatically logged in after running the command. The following is output from sshing into an instance and then running 'sudo
 cat /var/log/messages' to verify cloud-init execution and package installation:
 
-<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
+<script id="asciicast-522775" src="https://asciinema.org/a/522775.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
 
 ### Destroying when done
 
@@ -208,7 +208,7 @@ terraform destroy -auto-approve
 ```
 The following is example output of the 'terraform destroy' when used on this project.
 
-<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
+<script id="asciicast-522775" src="https://asciinema.org/a/522775.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
 
 Modifying the cloud-init file and then performing the same workflow will allow you to get iterating quickly. At this point you should definitely
 know how to quickly get automating using OpenSUSE with Ampere on the Cloud!
