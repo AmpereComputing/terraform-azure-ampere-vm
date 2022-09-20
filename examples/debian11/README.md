@@ -236,8 +236,7 @@ container registry on the Debian host.
             YT90qFF93M3v01BbxP+EIY2/9tiIPbrd
             =0YYh
             -----END PGP PUBLIC KEY BLOCK-----
-    bootcmd:
-      - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
     package_update: true
     package_upgrade: true
     packages:
