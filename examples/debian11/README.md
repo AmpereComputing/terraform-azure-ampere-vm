@@ -281,7 +281,7 @@ terraform destroy -auto-approve
 ```
 The following is example output of the 'terraform destroy' when used on this project.
 
-<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>}
+<script id="asciicast-516707" src="https://asciinema.org/a/516707.js" async data-autoplay="true" data-size="small" data-speed="2"></script>
 
 Modifying the cloud-init file and then performing the same workflow will allow you to get iterating quickly. At this point you should definitely
 know how to quickly get automating using Debian with Ampere on the Cloud!
