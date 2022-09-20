@@ -29,7 +29,7 @@ In this post, we will build upon prevous work to quickly automate using [Debian]
 
 ## Requirements
 
-Obviously to begin you will need a couple things.  Personally I'm a big fan of the the DevOPs tools that support lots of api, and different use cases. [Terraform](https://www.terraform.io/downloads.html) is one of those types of tools.  If you have seen my prevous session from Microsoft Build on Cloud Workload Automation](https://mybuild.microsoft.com/en-US/partners/64d2f9ef-c7dd-43f7-9ee7-85ba25934a06?wt.mc_id=FP_Ampere_blog_Corp#:~:text=cloud%20native%20workload%20automation), I build a terraform module to quickly get you started using Ampere plaforms on Azure.  Today we are going to use that module to launch a [Debian](https://debian.org) virtual machine while passing in some metadata to configure it.
+Obviously to begin you will need a couple things.  Personally I'm a big fan of the the DevOPs tools that support lots of api, and different use cases. [Terraform](https://www.terraform.io/downloads.html) is one of those types of tools.  If you have seen my prevous session from [Microsoft Build on Cloud Workload Automation](https://mybuild.microsoft.com/en-US/partners/64d2f9ef-c7dd-43f7-9ee7-85ba25934a06?wt.mc_id=FP_Ampere_blog_Corp#:~:text=cloud%20native%20workload%20automation), I build a terraform module to quickly get you started using Ampere plaforms on Azure.  Today we are going to use that module to launch a [Debian](https://debian.org) virtual machine while passing in some metadata to configure it.
 
  * [Terraform](https://www.terraform.io/downloads.html)
  * [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
