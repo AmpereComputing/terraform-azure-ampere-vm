@@ -1,12 +1,7 @@
 #cloud-config
 
-package_update: true
-package_upgrade: true
-packages:
-  - screen
-  - rsync
-  - git
-  - curl
-
+package_update: false
+package_upgrade: false
 runcmd:
-  - echo 'Azure Ampere VM Debian 11 Example' >> /etc/motd
+  - dnf list installed >> ~/MARINER_PACKAGES.txt
+  - echo 'Azure Ampere VM CBL-Mariner Example' >> /etc/motd

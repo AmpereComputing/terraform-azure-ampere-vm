@@ -1,19 +1,4 @@
-![Ampere Computing](https://avatars2.githubusercontent.com/u/34519842?s=400&u=1d29afaac44f477cbb0226139ec83f73faefe154&v=4)
-
 # Getting started on Azure Ampere VMs with Debian using Terraform
-
-## Table of Contents
-* [Introduction](#introduction)
-* [Requirements](#requirements)
-* [Using the azure-ampere-vm terraform module](#using-the-azure-ampere-vm-terraform-module)
-  * [Configuration with terraform.tfvars](#configuration-with-terraformtfvars)
-  * [Creating the main.tf](#creating-the-maintf)
-  * [Creating a cloud-init template](#creating-a-cloud-init-template)
-  * [Running Terraform](#running-terraform)
-  * [Logging in](#logging-in)
-  * [Destroying when done](#destroying-done)
-
-## Introduction
 
 [Debian](https://debian.org) is one of the oldest operating systems
 based on the Linux kernel originally founded over 29 years ago. Since
