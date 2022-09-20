@@ -15,15 +15,14 @@
 
 ## Introduction
 
-[OpenSUSE](https://opensuse.org) is one of the oldest operating systems based on the Linux kernel originally founded over 29 years ago. Since its founding, [OpenSUSE](https://opensuse.org) has been developed openly and distributed freely according to the principles of the GNU Project. The [OpenSUSE](https://opensuse.org) project is coordinated over the Internet by a team of volunteers guided by the [OpenSUSE](https://opensuse.org) Project Leader and three foundational documents: the [OpenSUSE](https://opensuse.org) Social Contract, the [OpenSUSE](https://opensuse.org) Constitution, and the [OpenSUSE](https://opensuse.org) Free Software Guidelines. New [OpenSUSE](https://opensuse.org) distributions are updated continually, and the next candidate is released after a time-based freeze.
+[OpenSUSE](https://opensuse.org) is an operating systems based on the Linux kernel.
 
 For those unfamiliar with [OpenSUSE](https://opensuse.org), it has similarities with other Linux Distrubutions, including similar package management tooling and methods, packages, and open source software stacks available for installation easily.
 
 [OpenSUSE](https://opensuse.org) supports the industry standard metadata interfaces for Linux instance configurations in the cloud,[Cloud-Init](https://cloud-init.io). This allows you to automate your [OpenSUSE](https://opensuse.org) workloads. This also means [OpenSUSE](https://opensuse.org) is perfectly suitable when using on a cloud
 platform.
 
-Now personally speaking I have been working with the great team at the [OpenSUSE](https://opensuse.org) project for some time. For some time now The [OpenSUSE](https://opensuse.org) Project has used Ampere Platforms to develop, build and curate packages for each release. I've had the pleasure of watching their craftmanship, while iterating, and helping achieve the "it just works" experience for Aarch64 and Ampere platforms and customers who choose to build and run solutions on
-[OpenSUSE](https://opensuse.org). Recently [Microsoft announced the general availablity of Ampere Altra based processors in Azure](https://azure.microsoft.com/en-us/blog/azure-virtual-machines-with-ampere-altra-arm-based-processors-generally-available/). Additionally [OpenSUSE](https://opensuse.org) is one of the available
+Recently [Microsoft announced the general availablity of Ampere Altra based processors in Azure](https://azure.microsoft.com/en-us/blog/azure-virtual-machines-with-ampere-altra-arm-based-processors-generally-available/). Additionally [OpenSUSE](https://opensuse.org) is one of the available
 operating systems for use on Ampere VMs utilizing our cloud-native Ampere(R) Altra(TM) Aarch64 processors within [Azure](https://azure.microsoft.com/en-us/).
 
 In this post, we will build upon prevous work to quickly automate using [OpenSUSE](https://opensuse.org) on Ampere(R) Altra(TM) Arm64 processors using Ampere VMs within [Azure](https://azure.microsoft.com/en-us/).
