@@ -36,8 +36,7 @@ platforms on Azure. Today we are going to use that module to launch a [Debian](h
 
 -   [Terraform](https://www.terraform.io/downloads.html)
 -   [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
--   [Microsoft Azure
-    CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+-   [Microsoft Azure CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
 ## Using the azure-ampere-vm terraform module
 
@@ -63,14 +62,10 @@ tenant_id = "87654321-dcba-4321-dcba-ba0987654321"
 For more information regarding how to get your Azure credentials working with terraform please refer to the following reading material:
 
 -   [Terraform Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
--   [Install the Azure CLI on
-    Linux](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
--   [Install Azure CLI on
-    macOS](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos)
--   [Install Azure CLI on
-    Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows)
--   [Azure CLI authentication in
-    Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+-   [Install the Azure CLI on Linux](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
+-   [Install Azure CLI on macOS](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos)
+-   [Install Azure CLI on Windows](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows)
+-   [Azure CLI authentication in Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
 ### Creating the main.tf
 
