@@ -28,4 +28,4 @@ runcmd:
   - systemctl enable docker
   - systemctl start docker
   - docker run -d --name registry --restart=always -p 4000:5000  -v registry:/var/lib/registry registry:2
-  - echo 'Azure Ampere VM Ubuntu 20.04 Example' >> /etc/motd
+  - echo 'Azure Ampere VM OpenSUSE Leap Example' >> /etc/motd
