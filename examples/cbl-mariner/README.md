@@ -36,8 +36,7 @@ platforms on Azure. Today we are going to use that module to launch a [CBL-Marin
 
 -   [Terraform](https://www.terraform.io/downloads.html)
 -   [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
--   [Microsoft Azure
-    CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+-   [Microsoft Azure CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
 ## Using the azure-ampere-vm terraform module
 
