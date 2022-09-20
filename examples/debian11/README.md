@@ -103,7 +103,7 @@ output "azure_ampere_vm_public_ips" {
 
 ### Creating a cloud init template.
 
-Using your favorite text editor create a file named cloud-init.yaml.tpl in the same directory as the main.tf you previously created. Copy the following content into the text file and save it.
+Using your favorite text editor create a file named cloud-init.yaml.tpl in the same directory as the main.tf you previously created. Copy the following content into the text file and save it.   With this metadata file we will add an external 'apt' repository for which will allow us to install the upstream Docker packages, then we will run a simple container registry on the Debian host.
 
 ```
 #cloud-config
