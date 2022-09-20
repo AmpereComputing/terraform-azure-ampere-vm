@@ -103,8 +103,10 @@ For the purpose of this we will quickly configure Terraform using a
 terraform.tfvars in the project directory.\
 The following is an example of what terraform.tfvars should look like:
 
+```
     subscription_id = "12345678-abcd-1234-abcd-1234567890ab"
     tenant_id = "87654321-dcba-4321-dcba-ba0987654321"
+```
 
 For more information regarding how to get your Azure credentials working
 with terraform please refer to the following reading material:
@@ -126,6 +128,7 @@ To use the terraform module you must open your favorite text editor and
 create a file called main.tf. Copy the following code which allows you
 to supply a custom cloud-init template at launch:
 
+```
     variable "subscription_id" {}
     variable "tenant_id" {}
 
@@ -156,6 +159,7 @@ to supply a custom cloud-init template at launch:
     output "azure_ampere_vm_public_ips" {
       value     = module.azure-ampere-vm.azure_ampere_vm_public_ipaddresses
     }
+```
 
 ### Creating a cloud init template.
 
@@ -166,119 +170,24 @@ file we will add an external 'apt' repository for which will allow us to
 install the upstream Docker packages, then we will run a simple
 container registry on the CBL-Mariner host.
 
-    #cloud-config
+```
+#cloud-config
 
-    apt:
-      sources:
-        docker.list:
-          source: deb [arch=arm64] https://download.docker.com/linux/debian $RELEASE stable
-          keyserver: pgp.mit.edu
-          key: |
-            -----BEGIN PGP PUBLIC KEY BLOCK-----
-            
-            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
-            YT90qFF93M3v01BbxP+EIY2/9tiIPbrd
-            =0YYh
-            -----END PGP PUBLIC KEY BLOCK-----
-
-    package_update: true
-    package_upgrade: true
-    packages:
-      - screen
-      - rsync
-      - git
-      - curl
-      - python3-pip
-      - python3-dev
-      - python3-selinux
-      - python3-setuptools
-      - python3-venv
-      - libffi-dev
-      - gcc
-      - libssl-dev
-      - apt-transport-https
-      - ca-certificates
-      - curl
-      - gnupg-agent
-      - software-properties-common
-
-    groups:
-      - docker
-    system_info:
-      default_user:
-        groups: [docker]
-
-    runcmd:
-      - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-      - sudo apt-get update -y && apt-get install -y docker-ce docker-ce-cli
-      - docker run -d --name registry --restart=always -p 4000:5000  -v registry:/var/lib/registry registry:2
-      - pip3 install -U pip
-      - pip3 install -U wheel
-      - echo 'Azure Ampere VM CBL-Mariner 11 Example' >> /etc/motd
-
+package_update: false
+package_upgrade: false
+runcmd:
+  - dnf list installed >> ~/MARINER_PACKAGES.txt
+  - echo 'Azure Ampere VM CBL-Mariner Example' >> /etc/motd
+```
 ### Running Terraform
 
 Executing terraform is broken into three commands. The first you must
 initialize the terraform project with the modules and necessary plugins
 to support proper execution. The following command will do that:
 
-    terraform init
+```
+terraform init
+```
 
 Below is output from a 'terraform init' execution within the project
 directory.
@@ -289,7 +198,9 @@ After 'terraform init' is executed it is necessary to run 'plan' to see
 the tasks, steps and objects. that will be created by interacting with
 the cloud APIs. Executing the following from a command line will do so:
 
-    terraform plan
+```
+terraform plan
+```
 
 The ouput from a 'terraform plan' execution in the project directory
 will look similar to the following:
@@ -302,7 +213,9 @@ display any output that is defined. Executing the following command from
 the project directory will automatically execute without requiring any
 additional interaction:
 
-    terraform apply -auto-approve
+```
+terraform apply -auto-approve
+```
 
 The following is an example of output from a 'apply' run of terraform
 from within the project directory:
@@ -315,7 +228,9 @@ Next you'll need to login with the dynamically generated sshkey that
 will be sitting in your project directory. To log in take the ip address
 from the output above and run the following ssh command:
 
-    ssh -i ./azure-id_rsa debian@20.69.123.141
+```
+ssh -i ./azure-id_rsa debian@20.69.123.141
+```
 
 You should be automatically logged in after running the command. The
 following is output from sshing into an instance and then running 'sudo
@@ -331,7 +246,9 @@ finished you will need to execute the 'destroy' command to remove all
 created objects in a 'leave no trace' manner. Execute the following from
 a command to remove all created objects when finished:
 
-    terraform destroy -auto-approve
+```
+terraform destroy -auto-approve
+```
 
 The following is example output of the 'terraform destroy' when used on
 this project.
