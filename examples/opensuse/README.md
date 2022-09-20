@@ -103,8 +103,10 @@ For the purpose of this we will quickly configure Terraform using a
 terraform.tfvars in the project directory.\
 The following is an example of what terraform.tfvars should look like:
 
+```
     subscription_id = "12345678-abcd-1234-abcd-1234567890ab"
     tenant_id = "87654321-dcba-4321-dcba-ba0987654321"
+```
 
 For more information regarding how to get your Azure credentials working
 with terraform please refer to the following reading material:
@@ -126,6 +128,7 @@ To use the terraform module you must open your favorite text editor and
 create a file called main.tf. Copy the following code which allows you
 to supply a custom cloud-init template at launch:
 
+```
     variable "subscription_id" {}
     variable "tenant_id" {}
 
@@ -156,6 +159,7 @@ to supply a custom cloud-init template at launch:
     output "azure_ampere_vm_public_ips" {
       value     = module.azure-ampere-vm.azure_ampere_vm_public_ipaddresses
     }
+```
 
 ### Creating a cloud init template.
 
@@ -166,6 +170,7 @@ file we will add an external 'apt' repository for which will allow us to
 install the upstream Docker packages, then we will run a simple
 container registry on the OpenSUSE host.
 
+```
     #cloud-config
 
     apt:
@@ -271,6 +276,7 @@ container registry on the OpenSUSE host.
       - pip3 install -U pip
       - pip3 install -U wheel
       - echo 'Azure Ampere VM OpenSUSE 11 Example' >> /etc/motd
+```
 
 ### Running Terraform
 
@@ -278,7 +284,9 @@ Executing terraform is broken into three commands. The first you must
 initialize the terraform project with the modules and necessary plugins
 to support proper execution. The following command will do that:
 
-    terraform init
+```
+terraform init
+```
 
 Below is output from a 'terraform init' execution within the project
 directory.
@@ -289,7 +297,9 @@ After 'terraform init' is executed it is necessary to run 'plan' to see
 the tasks, steps and objects. that will be created by interacting with
 the cloud APIs. Executing the following from a command line will do so:
 
-    terraform plan
+```
+terraform plan
+```
 
 The ouput from a 'terraform plan' execution in the project directory
 will look similar to the following:
@@ -302,7 +312,9 @@ display any output that is defined. Executing the following command from
 the project directory will automatically execute without requiring any
 additional interaction:
 
-    terraform apply -auto-approve
+```
+terraform apply -auto-approve
+```
 
 The following is an example of output from a 'apply' run of terraform
 from within the project directory:
@@ -315,7 +327,9 @@ Next you'll need to login with the dynamically generated sshkey that
 will be sitting in your project directory. To log in take the ip address
 from the output above and run the following ssh command:
 
-    ssh -i ./azure-id_rsa opensuse@20.69.123.141
+```
+ssh -i ./azure-id_rsa opensuse@20.69.123.141
+```
 
 You should be automatically logged in after running the command. The
 following is output from sshing into an instance and then running 'sudo
@@ -331,8 +345,9 @@ finished you will need to execute the 'destroy' command to remove all
 created objects in a 'leave no trace' manner. Execute the following from
 a command to remove all created objects when finished:
 
-    terraform destroy -auto-approve
-
+```
+terraform destroy -auto-approve
+```
 The following is example output of the 'terraform destroy' when used on
 this project.
 
