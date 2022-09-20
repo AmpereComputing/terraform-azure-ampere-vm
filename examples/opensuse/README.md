@@ -15,62 +15,28 @@
 
 ## Introduction
 
-[OpenSUSE](https://opensuse.org) is one of the oldest operating systems
-based on the Linux kernel originally founded over 29 years ago. Since
-its founding, [OpenSUSE](https://opensuse.org) has been developed openly and
-distributed freely according to the principles of the GNU Project. The
-[OpenSUSE](https://opensuse.org) project is coordinated over the Internet by
-a team of volunteers guided by the [OpenSUSE](https://opensuse.org) Project
-Leader and three foundational documents: the
-[OpenSUSE](https://opensuse.org) Social Contract, the
-[OpenSUSE](https://opensuse.org) Constitution, and the
-[OpenSUSE](https://opensuse.org) Free Software Guidelines. New
-[OpenSUSE](https://opensuse.org) distributions are updated continually, and
-the next candidate is released after a time-based freeze.
+[OpenSUSE](https://opensuse.org) is one of the oldest operating systems based on the Linux kernel originally founded over 29 years ago. Since
+its founding, [OpenSUSE](https://opensuse.org) has been developed openly and distributed freely according to the principles of the GNU Project. The
+[OpenSUSE](https://opensuse.org) project is coordinated over the Internet by a team of volunteers guided by the [OpenSUSE](https://opensuse.org) Project
+Leader and three foundational documents: the [OpenSUSE](https://opensuse.org) Social Contract, the [OpenSUSE](https://opensuse.org) Constitution, and the
+[OpenSUSE](https://opensuse.org) Free Software Guidelines. New [OpenSUSE](https://opensuse.org) distributions are updated continually, and the next candidate is released after a time-based freeze.
 
-For those unfamiliar with [OpenSUSE](https://opensuse.org), it has
-similarities with other Linux Distrubutions, including similar package
-management tooling and methods, packages, and open source software
-stacks available for installation easily.
+For those unfamiliar with [OpenSUSE](https://opensuse.org), it has similarities with other Linux Distrubutions, including similar package
+management tooling and methods, packages, and open source software stacks available for installation easily.
 
-[OpenSUSE](https://opensuse.org) supports the industry standard metadata
-interfaces for Linux instance configurations in the cloud,
-[Cloud-Init](https://cloud-init.io). This allows you to automate your
-[OpenSUSE](https://opensuse.org) workloads. This also means
-[OpenSUSE](https://opensuse.org) is perfectly suitable when using on a cloud
-platform.
+[OpenSUSE](https://opensuse.org) supports the industry standard metadata interfaces for Linux instance configurations in the cloud,[Cloud-Init](https://cloud-init.io). This allows you to automate your [OpenSUSE](https://opensuse.org) workloads. This also means [OpenSUSE](https://opensuse.org) is perfectly suitable when using on a cloud platform.
 
-Now personally speaking I have been working with the great team at the
-[OpenSUSE](https://opensuse.org) project for some time. For some time now
-The [OpenSUSE](https://opensuse.org) Project has used Ampere Platforms to
-develop, build and curate packages for each release. I've had the
-pleasure of watching their craftmanship, while iterating, and helping
-achieve the "it just works" experience for Aarch64 and Ampere platforms
-and customers who choose to build and run solutions on
-[OpenSUSE](https://opensuse.org). Recently [Microsoft announced the general
-availablity of Ampere Altra based processors in
-Azure](https://azure.microsoft.com/en-us/blog/azure-virtual-machines-with-ampere-altra-arm-based-processors-generally-available/).
-Additionally [OpenSUSE](https://opensuse.org) is one of the available
-operating systems for use on Ampere VMs utilizing our cloud-native
-Ampere(R) Altra(TM) Aarch64 processors within
-[Azure](https://azure.microsoft.com/en-us/).
+Now personally speaking I have been working with the great team at the [OpenSUSE](https://opensuse.org) project for some time. For some time now the [OpenSUSE](https://opensuse.org) Project has used Ampere Platforms to develop, build and curate packages for each release. I've had the pleasure of watching their craftmanship, while iterating, and helping achieve the "it just works" experience for Aarch64 and Ampere platforms and customers who choose to build and run solutions on [OpenSUSE](https://opensuse.org). Recently [Microsoft announced the general availablity of Ampere Altra based processors in Azure](https://azure.microsoft.com/en-us/blog/azure-virtual-machines-with-ampere-altra-arm-based-processors-generally-available/).
+Additionally [OpenSUSE](https://opensuse.org) is one of the available operating systems for use on Ampere VMs utilizing our cloud-native Ampere(R) Altra(TM) Aarch64 processors within [Azure](https://azure.microsoft.com/en-us/).
 
-In this post, we will build upon prevous work to quickly automate using
-[OpenSUSE](https://opensuse.org) on Ampere(R) Altra(TM) Arm64 processors
-using Ampere VMs within [Azure](https://azure.microsoft.com/en-us/).
+In this post, we will build upon prevous work to quickly automate using [OpenSUSE](https://opensuse.org) on Ampere(R) Altra(TM) Arm64 processors using Ampere VMs within [Azure](https://azure.microsoft.com/en-us/).
 
 ## Requirements
 
-To begin you will need a couple things. Personally I'm a big fan of the
-the DevOPs tools that support lots of api, and different use cases.
-[Terraform](https://www.terraform.io/downloads.html) is one of those
-types of tools. If you have seen my previous session from [Microsoft
-Build on Cloud Workload
-Automation](https://mybuild.microsoft.com/en-US/partners/64d2f9ef-c7dd-43f7-9ee7-85ba25934a06?wt.mc_id=FP_Ampere_blog_Corp#:~:text=cloud%20native%20workload%20automation),
-I built a terraform module to quickly get you started using Ampere
-platforms on Azure. Today we are going to use that module to launch a
-[OpenSUSE](https://opensuse.org) virtual machine while passing in some
-metadata to configure it.
+To begin you will need a couple things. Personally I'm a big fan of the DevOPs tools that support lots of api, and different use cases.
+[Terraform](https://www.terraform.io/downloads.html) is one of those types of tools. If you have seen my previous session from [Microsoft Build on Cloud Workload
+Automation](https://mybuild.microsoft.com/en-US/partners/64d2f9ef-c7dd-43f7-9ee7-85ba25934a06wt.mc_id=FP_Ampere_blog_Corp#:~:text=cloud%20native%20workload%20automation), I built a terraform module to quickly get you started using Ampere
+platforms on Azure. Today we are going to use that module to launch a [OpenSUSE](https://opensuse.org) virtual machine while passing in some metadata to configure it.
 
 -   [Terraform](https://www.terraform.io/downloads.html)
 -   [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
@@ -79,11 +45,7 @@ metadata to configure it.
 
 ## Using the azure-ampere-vm terraform module
 
-The
-[azure-ampere-vm](https://github.com/amperecomputing/terraform-azure-ampere-vm)
-terraform module code supplies the minimal amount of information to
-quickly have working Ampere A1 instances on Azure ["Always
-Free"](https://www.oracle.com/cloud/free/#always-free). It has been
+The [azure-ampere-vm](https://github.com/amperecomputing/terraform-azure-ampere-vm) terraform module code supplies the minimal amount of information to quickly have working Ampere A1 instances on Azure. It has been
 updated to include the ability to easily select
 [OpenSUSE](https://opensuse.org) by passing the appropriate parameter during
 usage. Additional tasks performed by the
