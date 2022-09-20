@@ -68,8 +68,6 @@ apt:
         YT90qFF93M3v01BbxP+EIY2/9tiIPbrd
         =0YYh
         -----END PGP PUBLIC KEY BLOCK-----
-bootcmd:
-  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 package_update: true
 package_upgrade: true
 packages:
@@ -98,7 +96,7 @@ system_info:
     groups: [docker]
 
 runcmd:
-  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
   - sudo apt-get update -y && apt-get install -y docker-ce docker-ce-cli
   - docker run -d --name registry --restart=always -p 4000:5000  -v registry:/var/lib/registry registry:2
   - pip3 install -U pip
