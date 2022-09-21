@@ -15,7 +15,7 @@
 
 ## Introduction
 
-[OpenSUSE](https://opensuse.org) is an operating systems based on the Linux kernel. [OpenSUSE](https://opensuse.org) Leap is a classic stable distribution approach: one release each year, and in between, security updates and bugfixes. This makes Leap very attractive as a server operating system, as well as a desktop operating system, since it requires little maintenance effort.
+[OpenSUSE](https://opensuse.org) is an operating systems based on the Linux kernel. [OpenSUSE](https://opensuse.org) Leap uses source from SUSE Linux Enterprise (SLE), which gives Leap a level of stability, and combines that with community developments to give users, developers and sysadmins a stable Linux experience. [OpenSUSE](https://opensuse.org) Leap release approach: one release each year, and in between, security updates and bugfixes. 
 
 For those unfamiliar with [OpenSUSE](https://opensuse.org), it has similarities with other Linux Distrubutions, including similar package management tooling and methods, packages, and open source software stacks available for installation easily.
 
