@@ -1,13 +1,13 @@
 # Azure Aarch64 Images
 locals {
     os_images = {
-    # almalinux8 = {
-    #   image_publisher = "almalinux"
-    #   image_offer     = "0001-com-ubuntu-server-arm-preview-focal"
-    #   image_sku       = "20_04-LTS"
-    #   image_version   = "latest"
-    #   default_os_user = "almalinux"
-    # }
+      almalinux8 = {
+        image_publisher = "almalinux"
+        image_offer     = "almalinux-8-arm64"
+        image_sku       = "8-arm64"
+        image_version   = "latest"
+        default_os_user = "almalinux"
+      }
       debian11     = {
         image_publisher = "Debian"
         image_offer     = "debian-11-arm64"
