@@ -40,40 +40,7 @@ tenant_id = "87654321-dcba-4321-dcba-ba0987654321"
 ```
 ### Using as a Module
 
-This can also be used as a terraform module.   The following is example code for module usage supplying a custom cloud-init template:
-
-```
-variable "subscription_id" {}
-variable "tenant_id" {}
-
-locals {
-  cloud_init_template_path = "${path.cwd}/cloud-init.yaml.tpl"
-}
-
-module "azure-ampere-vm" {
-        source                   = "github.com/amperecomputing/terraform-azure-ampere-vm"  
-        subscription_id          = var.subscription_id
-        tenant_id                = var.tenant_id
-     #  Optional
-     #  resource_group           = var.resource_group
-     #  rg_prefix                = var.rg_prefix
-     #  virtual_network_name     = var.virtual_network_name
-     #  address_space            = var.address_space
-     #  subnet_prefix            = var.subnet_prefix
-     #  vm_size                  = var.vm_size
-        location                 = "westus2"
-        azure_vm_count           = 1
-        azure_os_image           = "ubuntu2004"
-        instance_prefix          = "azure-ampere-vm-ubuntu-2004"
-        cloud_init_template_file = local.cloud_init_template_path
-}
-output "azure_ampere_vm_private_ips" {
-  value     = module.azure-ampere-vm.azure_ampere_vm_private_ipaddresses
-}
-output "azure_ampere_vm_public_ips" {
-  value     = module.azure-ampere-vm.azure_ampere_vm_public_ipaddresses
-}
-```
+This can also be used as a terraform module.   The [examples](examples) directory contains example code for module usage showing different operating systems booting with a custom cloud-init templates.   Doing a clone of this repository and changing directory to one of the examples, placing a terraform.tfvars into that directory, and running a typical terrafornm workflow will produce a working virtual machine in the os that was specified in the main.tf that is located within the chosen example directory.
 
 ### Running Terraform
 
