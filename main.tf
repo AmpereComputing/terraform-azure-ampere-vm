@@ -16,13 +16,22 @@ resource "local_file" "azure-ssh-pubkey" {
     file_permission = "0644"
 }
 
+# output the Azure SSH public key
 output "azure_ssh_pubic_key" {
   value = tls_private_key.azure.public_key_openssh
 }
 
+# output the Azure SSH private key
 output "azure_ssh_private_key" {
   value = tls_private_key.azure.private_key_pem
   sensitive = true
 }
 
 resource "random_uuid" "random_id" { }
+    
+# Output: A randomly generated uuid
+output "random_uuid" {
+  value = random_uuid.random_id.result 
+  sensitive = false
+}   
+

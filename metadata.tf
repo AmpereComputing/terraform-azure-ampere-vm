@@ -11,6 +11,7 @@ data "template_file" "cloud_config" {
   template = file("${local.cloud_init_template_file}")
 }
 
+# Output the rendered cloud-init file
 output "cloud_init" {
   value = data.template_file.cloud_config.rendered
   sensitive = false
