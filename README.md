@@ -60,7 +60,6 @@ No requirements.
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 | <a name="provider_local"></a> [local](#provider\_local) | n/a |
 | <a name="provider_random"></a> [random](#provider\_random) | n/a |
-| <a name="provider_template"></a> [template](#provider\_template) | n/a |
 | <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
 
 ## Modules
@@ -84,7 +83,6 @@ No modules.
 | [tls_private_key.azure](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
 | [azurerm_public_ip.pip](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/public_ip) | data source |
 | [azurerm_subscription.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subscription) | data source |
-| [template_file.cloud_config](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
 
 ## Inputs
 
@@ -116,7 +114,6 @@ No modules.
 | <a name="output_azure_current_subscription_display_name"></a> [azure\_current\_subscription\_display\_name](#output\_azure\_current\_subscription\_display\_name) | Output the Display Name for the current Azure Subscription |
 | <a name="output_azure_ssh_private_key"></a> [azure\_ssh\_private\_key](#output\_azure\_ssh\_private\_key) | output the Azure SSH private key |
 | <a name="output_azure_ssh_pubic_key"></a> [azure\_ssh\_pubic\_key](#output\_azure\_ssh\_pubic\_key) | output the Azure SSH public key |
-| <a name="output_cloud_init"></a> [cloud\_init](#output\_cloud\_init) | Output the rendered cloud-init file |
 | <a name="output_random_uuid"></a> [random\_uuid](#output\_random\_uuid) | Output: A randomly generated uuid |
 <!-- END_TF_DOCS -->
 
