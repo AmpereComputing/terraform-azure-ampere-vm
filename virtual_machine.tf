@@ -30,7 +30,8 @@ resource "azurerm_virtual_machine" "vm" {
     computer_name  = format("${var.instance_prefix}-%02d", count.index+1)
     admin_username = local.os_images[var.azure_os_image].default_os_user
     admin_password = local.os_images[var.azure_os_image].default_os_user
-    custom_data    = "${base64encode(data.template_file.cloud_config.rendered)}"
+    #custom_data    = "${base64encode(data.template_file.cloud_config.rendered)}"
+    custom_data    = "${base64encode(file("${local.cloud_init_template_file}"))}"
   }
   os_profile_linux_config {
     disable_password_authentication = true
