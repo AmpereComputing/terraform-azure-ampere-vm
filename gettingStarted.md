@@ -18,12 +18,12 @@ For more examples and to ask questions, please visit our [developer portal](http
 - create an Azure Ubuntu 20.04 instance
 - add in some basic tools
   - git, curl, python, docker ..
-- Look around the instance to prove that it is working
+- run 'lscpu' to prove that the VM is working
 - destroy the instance
 
-This will allow you to create a clean version of the VM over, do your testing, and then destroy the instance so that you won't accidently leave it up and running.  
+This tutorial will allow you to create a clean version of the VM, do your testing, and then destroy the instance so that you won't accidently leave it up and running.  
 
-This tutorial is just going to give you the instructions on how to create the instance, without much explaination of what is happening.  We will add that in later versions at the end of this document. 
+It is just going to give you the instructions on how to create the instance, without much explaination of what is happening.  We will add that in later versions at the end of this document. 
 
 ## Prerequisites
 Make sure that you have installed:
