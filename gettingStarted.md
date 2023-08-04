@@ -31,7 +31,7 @@ Make sure that you have installed:
  * [Microsoft Azure Account](https://azure.microsoft.com/en-us/)
  * [Microsoft Azure CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
-##  Clone this repo
+##  Clone the Terraform Azure Ampere repo
 - Open a terminal window and navigate to where you want to place the code and clone the repo
 
 ```
