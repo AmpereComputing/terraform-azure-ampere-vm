@@ -1,10 +1,16 @@
 # How to get an Azure VM up and running
 For more examples and to ask questions, please visit our [developer portal](https://developer.amperecomputing.com) and [developer community](https://community.amperecomputing.com)
 
+This tutorial is designed for you to follow long without really thinking.  I have learned from teaching, writing tutorials, and especially my own learning that the first step is just to get something simple working.  This might be a ‘Hello World’ in software world or a blinking a LED in hardware.  Once you have something running, you will be able to relax and start thinking “what if I change this?” or “what does this do?”  Therefore the goal of this tutorial is to give you a good first taste and hopefully that will inspire you to continue your learnings.
+
+This is based on Ampere Computing's [terraform-azure-ampere-vm](https://github.com/AmpereComputing/terraform-azure-ampere-vm)'s  GitHub Repo. 
+
+
 ## Table of Contents
+
   * [What we will do:](#what-we-will-do-)
   * [Prerequisites](#prerequisites)
-  * [Clone this repo](#clone-this-repo)
+  * [Clone the Terraform Azure Ampere repo](#clone-the-terraform-azure-ampere-repo)
   * [Login to your Azure account](#login-to-your-azure-account)
   * [Create the terraform.tfvars file](#create-the-terraformtfvars-file)
   * [Edit main.tf](#edit-maintf)
@@ -13,17 +19,21 @@ For more examples and to ask questions, please visit our [developer portal](http
   * [Verify in the Azure Portal](#verify-in-the-azure-portal)
   * [Destroy your VM](#destroy-your-vm)
   * [Create Another VM](#create-another-vm)
+  * [Notes/Things to try:](#notes-things-to-try-)
+  * [What Next?](#what-next-)
+
+
+
 
 ## What we will do:
 - create an Azure Ubuntu 20.04 instance
 - add in some basic tools
-  - git, curl, python, docker ..
+  - git, curl, python, docker, ...
 - run 'lscpu' to prove that the VM is working
 - destroy the instance
 
-This tutorial will allow you to create a clean version of the VM, do your testing, and then destroy the instance so that you won't accidently leave it up and running.  
+When you complete this tutorial, you will have a working Ubuntu 20.04 instance with some common tools.  Since we don’t know what type of account you have (a free account or something from your company) we are just going to create a small 2 core VM instance using Terraform.  The reason to use Terraform is that it automates the creation and destruction and is pretty easy to get started with, but it does have a learn curve for its more advanced features.  Therefore, just follow the directions to get the VM up and running.  Afterwards, you can look through the files and start to understand what TF is doing.  
 
-It is just going to give you the instructions on how to create the instance, without much explaination of what is happening.  We will add that in later versions at the end of this document. 
 
 ## Prerequisites
 Make sure that you have installed:
@@ -32,7 +42,7 @@ Make sure that you have installed:
  * [Microsoft Azure CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
 ##  Clone the Terraform Azure Ampere repo
-- Open a terminal window and navigate to where you want to place the code and clone the repo
+- Open a terminal window and navigate to where you want to place the code and clone this repo
 
 ```
 git clone https://github.com/AmpereComputing/terraform-azure-ampere-vm.git
@@ -187,3 +197,14 @@ To create another VM, just run the Terraform init command again.
 ```
 terraform init && terraform plan && terraform apply -auto-approve
 ```
+## Notes/Things to try:
+When you do the destroy command, Terraform goes off and builds everything it needs, it comes back and confirms that you want to destroy it.  I know for me I keep moving on before the prompt pops up.
+
+Create two or more VMs.  In main.tf, there is a variable called azure_vm_count.  This is the number of VMs create.  Change it to 2 and two VMs will be created.
+
+You can change the location by putting in a different region in the location variable.
+
+Naming convention for the instance that we created: Standard_D2ps_v5z The p means ARM and the number (2) is the number of vCPU and p means ARM.  So if you want a 16 vCPUs, change the 2 to 16.  For the other meanings, check out the Azure VM Naming Conventions site. 
+
+## What Next?
+Yes, this was a simple example, but if you are new to Terraform, you are realizing how powerful it can be.  To see some more examples, check out the Ampere GitHub page or visit out community at community.ampereComputin.com.
