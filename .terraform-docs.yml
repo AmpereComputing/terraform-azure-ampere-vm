@@ -76,22 +76,7 @@ output:
   template: |-
     <!-- BEGIN_TF_DOCS -->
     {{ .Content }}
-<<<<<<< HEAD
     <!-- END_TF_DOCS -->
-=======
-
-    ## Example
-
-    ```hcl
-    {{ include "examples/rockylinux8/main.tf" }}
-    ```
-
-    ```hcl
-    {{ include "examples/rockylinux9/main.tf" }}
-    ```
-
-    <!-- END_TF_DOCS -->    
->>>>>>> e67d73a (testing)
 
 output-values:
   enabled: false
